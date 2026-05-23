@@ -19,7 +19,7 @@ export default function Home({user,setUser}){
     </div>
 
     {tab==='home' && <div className='card'>ביחד - אף אחד לא לבד</div>}
-    {tab==='report' && <Report/>}
+    {tab==='report' && <Report user={user}/>}
     {tab==='tasks' && <Tasks/>}
     {tab==='amb' && <Ambassadors/>}
   </div>
